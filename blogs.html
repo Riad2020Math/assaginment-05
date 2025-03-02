@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="flex justify-between my-6 mx-36 p-6 rounded-lg bg-white">
+        <div class="flex items-center">
+            <img src="assets/logo.png" alt="logo">
+            <h1 class="ml-2"><span class="text-[35px] text-[#00303C]">Dev</span><span class="text-[35px] font-bold text-[#00303C]">Board</span></h1>
+        </div>
+        <div class="flex items-center">
+            <button id="back-to-desk" class="btn btn-primary text-[30px] h-14">Back To Desk</button>
+        </div>
+    </header>
+    <section class="my-3 mx-36 p-6 rounded-lg bg-white">
+        <h1 class="text-center text-[30px] text-[#00303C] font-bold"> Blogs </h1>
+    </section>
+    <section class="my-3 mx-36 p-6 rounded-lg bg-white">
+        <p class="text-[26px] text-[#00303C] font-bold"> Question-1: What are the different ways to select an element in the DOM? </p>
+        <p class="mt-4 pl-5 text-[21px] text-[#00303C] font-normal">getElementById("id"), <br>
+            getElementsByClassName("class"), <br>
+            getElementsByTagName("tag"), <br> 
+            querySelector("CSS selector"), <br>
+            querySelectorAll("CSS selector").</p>
+    </section>
+    <section class="my-3 mx-36 p-6 rounded-lg bg-white">
+        <p class="text-[26px] text-[#00303C] font-bold"> Question-2: What is the difference between innerHTML, innerText, and textContent ?  </p>    
+        <p class="mt-4 pl-5 text-[21px] text-[#00303C] font-normal">innerHTML → Use when dealing with HTML elements. <br>
+            innerText → Use when you need only visible text. <br>
+            textContent → Use when you need all text, including hidden text. </p>
+    </section>
+    <section class="my-3 mx-36 p-6 rounded-lg bg-white">
+        <p class="text-[26px] text-[#00303C] font-bold">Question-3: What is event delegation in the DOM?</p>
+        <p class="mt-4 pl-5 text-[21px] text-[#00303C] font-normal">Event delegation is a technique where instead of adding event listeners to multiple child elements, we add a single event listener to a parent element and use event bubbling to handle events on child elements.</p>
+    </section>
+    <section class="my-3 mx-36 p-6 rounded-lg bg-white">
+        <p class="text-[26px] text-[#00303C] font-bold">Question-4: What is event bubbling in the DOM?</p>
+        <p class="mt-4 pl-5 text-[21px] text-[#00303C] font-normal">Event bubbling is a mechanism in the DOM where an event, such as a click or keypress, propagates from the target element up to its ancestors (parent elements), all the way to the root of the document.</p>
+    </section>
+    <section class="my-3 mx-36 p-6 rounded-lg bg-white">
+        <p class="text-[26px] text-[#00303C] font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+        <p class="mt-4 pl-5 text-[21px] text-[#00303C] font-normal">Create: document.createElement(tagName) <br>
+            Add: parent.appendChild(child) or parent.insertBefore(newElement, referenceNode) <br>
+            Remove: parent.removeChild(child) or element.remove()</p>
+    </section>
+    <script src="link.js"></script>
+</body>
+</html>

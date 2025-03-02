@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="flex justify-between my-6 mx-36 p-6 rounded-lg bg-white">
+        <div class="flex items-center">
+            <img src="assets/logo.png" alt="logo">
+            <h1 class="ml-2"><span class="text-[35px] text-[#00303C]">Dev</span><span class="text-[35px] font-bold text-[#00303C]">Board</span></h1>
+        </div>
+        <div class="flex items-center">
+            <div class="bg-[#F4F7FF] rounded-[32px] flex items-center px-4">
+                <img src="assets/checkbox.png" alt="checkbox">
+                <p class="text-[35px] font-bold mx-2 text-[#00303C]">23</p>
+            </div>
+            <img class="ml-12" src="assets/theme-btn.png" alt="">
+        </div>
+    </header>
+    <section class="my-6 mx-40 grid grid-cols-4 gap-6">
+        <div class="col-span-3">
+            <section class="grid grid-cols-4 gap-6 mb-12">
+                <div class="bg-[#F4F7FF] col-span-1 flex items-center px-3 rounded-xl">
+                    <img class="mx-6" src="assets/checkbox.png" alt="">
+                    <div class="ml-4">
+                        <p class="text-[20px] -my-2 py-0 text-[#00303C]">Task Assigned</p>
+                        <p class="text-[32px] font-bold text-[#00303C]">6</p>
+                    </div>
+                </div>
+                <button id="blog-page-btn" class=" h-auto w-auto col-span-2 ">
+                    <div class=" flex items-center rounded-xl py-12  bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
+                        <img class="mx-12" src="assets/board.png" alt="">
+                        <p class="text-[24px] text-[#FFFFFF] font-semibold">Discover Something <br>New Today! </p>
+                    </div>
+                </button>
+                <div class="bg-[#F4F7FF] col-span-1 flex items-center px-3 rounded-xl">
+                    <img class="mx-6" src="assets/calender.png" alt="">
+                    <p class="text-[22px] ml-4 text-[#00303C]">Wed ,<br><span class="text-[#00303C] font-bold">2 March 2025</span> </p>
+                </div>
+            </section>
+            <section class="mt-10 grid grid-cols-3 gap-6">
+                <div class="bg-[#F4F7FF] rounded-xl p-4 col-span-1">
+                    <h2 class="bg-white rounded-lg text-[#00303C] text-[20px] h-10 w-30 text-center">
+                        ShopEase
+                    </h2>
+                    <h1 class="text-[#00303C] text-[25px] my-5 font-semibold">
+                        Fix Mobile Button Issue 
+                    </h1>
+                    <p class="bg-white text-black text-[20px] rounded-lg mx-3 mb-8">
+                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[15px] text-[#00303C]">Deadline</p>
+                            <p class="text-[19px] font-semibold text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button id="complete01" class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-xl p-4 col-span-1">
+                    <h2 class="bg-white rounded-lg text-[#00303C] text-[20px] h-10 w-30 text-center">
+                        CloudSync
+                    </h2>
+                    <h1 class="text-[#00303C] text-[25px] my-5 font-semibold">
+                        Add Dark Mode
+                    </h1>
+                    <p class="bg-white text-black text-[20px] rounded-lg mx-3 mb-8">
+                        Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[15px] text-[#00303C]">Deadline</p>
+                            <p class="text-[19px] font-semibold text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-xl p-4 col-span-1">
+                    <h2 class="bg-white rounded-lg text-[#00303C] text-[20px] h-10 w-30 text-center">
+                        SwiftPay
+                    </h2>
+                    <h1 class="text-[#00303C] text-[25px] my-5 font-semibold">
+                        Optimize  Home page
+                    </h1>
+                    <p class="bg-white text-black text-[20px] rounded-lg mx-3 mb-8">
+                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[15px] text-[#00303C]">Deadline</p>
+                            <p class="text-[19px] font-semibold text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-xl p-4 col-span-1">
+                    <h2 class="bg-white rounded-lg text-[#00303C] text-[20px] h-10 w-30 text-center">
+                        Meta
+                    </h2>
+                    <h1 class="text-[#00303C] text-[25px] my-5 font-semibold">
+                        Add new emoji
+                    </h1>
+                    <p class="bg-white text-black text-[20px] rounded-lg mx-3 mb-8">
+                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[15px] text-[#00303C]">Deadline</p>
+                            <p class="text-[19px] font-semibold text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-xl p-4 col-span-1">
+                    <h2 class="bg-white rounded-lg text-[#00303C] text-[20px] h-10 w-30 text-center">
+                        Google LLC
+                    </h2>
+                    <h1 class="text-[#00303C] text-[25px] my-5 font-semibold">
+                        Integrate OpenAI API
+                    </h1>
+                    <p class="bg-white text-black text-[20px] rounded-lg mx-3 mb-8">
+                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[15px] text-[#00303C]">Deadline</p>
+                            <p class="text-[19px] font-semibold text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-xl p-4 col-span-1">
+                    <h2 class="bg-white rounded-lg text-[#00303C] text-[20px] h-10 w-30 text-center">
+                        Glassdoor
+                    </h2>
+                    <h1 class="text-[#00303C] text-[25px] my-5 font-semibold">
+                        Improve Job searching
+                    </h1>
+                    <p class="bg-white text-black text-[20px] rounded-lg mx-3 mb-8">
+                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[15px] text-[#00303C]">Deadline</p>
+                            <p class="text-[19px] font-semibold text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+        </div>
+        <div class="col-span-1  mx-auto">
+            <div class="flex items-center">
+                <img src="assets/activity.png" alt="">
+                <p class="text-[#00303C] text-[20px] ml-4 my-5">Activity Log</p>
+            </div>
+            <div>
+                <button class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Clear History</button>
+            </div>
+        </div>
+    </section>
+    <script src="link.js"></script>
+</body>
+</html>
