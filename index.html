@@ -19,9 +19,9 @@
         <div class="flex items-center">
             <div class="bg-[#F4F7FF] rounded-[32px] flex items-center px-4">
                 <img src="assets/checkbox.png" alt="checkbox">
-                <p class="text-[35px] font-bold mx-2 text-[#00303C]">23</p>
+                <p class="text-[35px] font-bold mx-2 text-[#00303C]"><span id="completed-count">23</span></p>
             </div>
-            <img class="ml-12" src="assets/theme-btn.png" alt="">
+            <img id="theme-toggle" class="ml-12" src="assets/theme-btn.png" alt="">
         </div>
     </header>
     <section class="my-6 mx-40 grid grid-cols-4 gap-6">
@@ -31,7 +31,7 @@
                     <img class="mx-6" src="assets/checkbox.png" alt="">
                     <div class="ml-4">
                         <p class="text-[20px] -my-2 py-0 text-[#00303C]">Task Assigned</p>
-                        <p class="text-[32px] font-bold text-[#00303C]">6</p>
+                        <p class="text-[32px] font-bold text-[#00303C]"> <span id="task-count">6</span></p>
                     </div>
                 </div>
                 <button id="blog-page-btn" class=" h-auto w-auto col-span-2 ">
@@ -42,7 +42,7 @@
                 </button>
                 <div class="bg-[#F4F7FF] col-span-1 flex items-center px-3 rounded-xl">
                     <img class="mx-6" src="assets/calender.png" alt="">
-                    <p class="text-[22px] ml-4 text-[#00303C]">Wed ,<br><span class="text-[#00303C] font-bold">2 March 2025</span> </p>
+                    <p class="text-[22px] ml-4 text-[#00303C]"><span id="date-display"></span></p>
                 </div>
             </section>
             <section class="mt-10 grid grid-cols-3 gap-6">
@@ -63,7 +63,7 @@
                             <p class="text-[19px] font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
                         <div>
-                            <button id="complete01" class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
+                            <button  id="task-btn-1"  class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                             <p class="text-[19px] font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
+                            <button  id="task-btn-2" class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                             <p class="text-[19px] font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
+                            <button  id="task-btn-3" class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                             <p class="text-[19px] font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
+                            <button  id="task-btn-4" class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                             <p class="text-[19px] font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
+                            <button  id="task-btn-5" class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                             <p class="text-[19px] font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
+                            <button  id="task-btn-6" class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Completed</button>
                         </div>
                     </div>
                 </div>    
@@ -179,7 +179,8 @@
                 <p class="text-[#00303C] text-[20px] ml-4 my-5">Activity Log</p>
             </div>
             <div>
-                <button class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Clear History</button>
+                <button id="clear-history-btn" class="btn btn-primary text-[20px] text-[#FFFFFF] py-3 px-5 rounded-lg">Clear History</button>
+                <div id="activity-log"></div>
             </div>
         </div>
     </section>
